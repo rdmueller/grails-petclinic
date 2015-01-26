@@ -9,12 +9,14 @@ class WelcomeSpec extends PetclinicSpecs {
 	
 	def setup() {
 		to WelcomePage
+        report "Welcome Page"
 	}
 	
 	def 'can find an Owner'() {
 		expect:
 		at WelcomePage
 		findOwner.click()
+        report "Find Owners Page"
 		at FindOwnersPage
 	}
 	
@@ -22,6 +24,7 @@ class WelcomeSpec extends PetclinicSpecs {
 		expect:
 		at WelcomePage
 		displayAllVets.click()
+        report "DisplayVetsPage"
 		at DisplayVetsPage
 	}
 
@@ -29,6 +32,7 @@ class WelcomeSpec extends PetclinicSpecs {
 		expect:
 		at WelcomePage
 		tutorial.click()
+        report "TutorialPage"
 		at TutorialPage
 	}
 }

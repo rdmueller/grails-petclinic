@@ -9,11 +9,13 @@ class FindOwnersSpec extends PetclinicSpecs {
 
 	def setup() {
 		to FindOwnersPage
+        report "FindOwnersPage"
 	}
 	
 	def 'can add a new Owner'() {
 		expect:
 		addOwner.click()
+        report "AddOwnerPage"
 		at AddOwnerPage
 	}
 	
@@ -23,7 +25,7 @@ class FindOwnersSpec extends PetclinicSpecs {
 		
 		when:
 		findOwners.click()
-		
+		report "no owners found"
 		then:
 		at FindOwnersPage
 		error
@@ -32,10 +34,10 @@ class FindOwnersSpec extends PetclinicSpecs {
 	def 'can find one specified Owner'() {
 		given:
 		lastName.value 'Bubinga'
-		
+		report "form filled"
 		when:
 		findOwners.click()
-		
+		report "owner found"
 		then:
 		at ShowOwnerPage 
 	}
@@ -43,10 +45,10 @@ class FindOwnersSpec extends PetclinicSpecs {
 	def 'can find multiple specified Owners'() {
 		given:
 		lastName.value 'Smith'
-		
+		report "form filled"
 		when:
 		findOwners.click()
-		
+		report "owners found"
 		then:
 		at OwnerSelectionPage
 	}

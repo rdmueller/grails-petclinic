@@ -59,7 +59,7 @@ grails.project.dependency.resolution = {
         test "org.seleniumhq.selenium:selenium-support:$seleniumVersion"
         // we need ghostdriver for phantomjs...
         test( "com.github.detro.ghostdriver:phantomjsdriver:1.1.0" ) {
-                transitive = false
+            transitive = false
         }
         test "org.seleniumhq.selenium:selenium-htmlunit-driver:$seleniumVersion"
         test ("org.seleniumhq.selenium:selenium-remote-driver:$seleniumVersion") // Needed by phantomjsdriver
@@ -86,5 +86,6 @@ grails.project.dependency.resolution = {
         //compile ":handlebars-asset-pipeline:1.3.0.3"
 		
 		test ":geb:$gebVersion"
+        test ":film-strip:0.1.4"        
     }
 }

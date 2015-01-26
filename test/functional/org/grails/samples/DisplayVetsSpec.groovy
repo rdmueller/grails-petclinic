@@ -6,6 +6,7 @@ class DisplayVetsSpec extends PetclinicSpecs {
 	
 	def setup() {
 		to DisplayVetsPage
+        report "DisplayVetsPage"
 	}
 	 
 	def 'can display a list of Veterinarians'() {
