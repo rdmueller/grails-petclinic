@@ -9,6 +9,7 @@ class ViewSourceFilters {
 
 			}
 			after = { Map model ->
+				model = model?:[:]
 				def controllerClass = grailsApplication.getArtefactByLogicalPropertyName("Controller", controllerName)
 				model["controllerClass"] = controllerClass.clazz.name
 				model["viewPath"] = "$controllerName:${model['viewName'] ?: actionName}"
