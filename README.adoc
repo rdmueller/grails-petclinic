@@ -2,7 +2,7 @@ Grails Film Strip Sample Application for Grails 2.2.x
 =====================================================
 
 This fork of the famous Petclinic has been enriched with some Geb and Spock Tests 
-(taken from the master branch) and the Grails Film Strip plugin. In order to run this
+(taken from the master branch) and the https://github.com/rdmueller/grails-filmStrip[Grails Film Strip plugin]. In order to run this
 sample, follow these steps:
 
 * make sure that phantomjs is installed http://phantomjs.org/ (test it by typing `phantomjs` in a shell)
