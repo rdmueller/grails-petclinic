@@ -8,9 +8,9 @@
 		<h2><g:message code="welcome"/></h2>
 
 		<ul>
-			<li><g:link controller="owner" action="find">Find owner</g:link></li>
-			<li><g:link action="vets">Display all veterinarians</g:link></li>
-			<li><g:link action="tutorial">Tutorial</g:link></li>
+			<li><g:link elementId="findOwner"  controller="owner" action="find">Find owner</g:link></li>
+			<li><g:link elementId="displayAll" action="vets">Display all veterinarians</g:link></li>
+			<li><g:link elementId="tutorial"   action="tutorial">Tutorial</g:link></li>
 		</ul>
 	</body>
 </html>
