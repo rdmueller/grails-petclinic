@@ -5,11 +5,11 @@ This fork of the famous Petclinic has been enriched with some Geb and Spock Test
 (taken from the master branch) and the Grails Film Strip plugin. In order to run this
 sample, follow these steps:
 
-* make sure that phantomjs is installed http://phantomjs.org/ (test it by typing "phantomjs" in a shell)
+* make sure that phantomjs is installed http://phantomjs.org/ (test it by typing `phantomjs` in a shell)
 * execute tests by typing `./grailsw test-app functional:` in a shell. 
 * view the resulting report by opening `target/test-reports/html/geb/reb_report.html` 
 
-[runningTests1.png]
+image::runningTests1.png[]
 
 you will now see the generated report in your favorite browser. The main part of the 
 screen will show you the full test report with all results. On the top of the screen,
